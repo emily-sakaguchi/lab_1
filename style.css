@@ -1,0 +1,59 @@
+.bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    min-width: 100%;
+    min-height: 100%;
+}
+
+h1 {
+    color:whitesmoke;
+    font-family: serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+body {
+    background-color: dimgrey;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    opacity: 0.8;
+}
+
+h5 {
+    color:whitesmoke;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color:black;
+    font-weight:500;
+}
