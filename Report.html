@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">GGR472</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Best of Kensington.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href ="Report.html">Report</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<body>
+    <div class = container>
+        <h1>Report</h1>
+    </div>
+    <div class = about-text> 
+    <p>
+        In GeoJSON, type, properties, and geometry are key elements. The word “type” appears several times in GeoJSON, allowing for layering of information. I have included a code snippet in Figure 1 to illustrate this. The first time “type” appears, it is used to specify a feature collection within which multiple features can be coded. Next, “type” is used to specify that we are coding a feature (i.e. a geometry with non-spatial attributes), and finally, the word “type” appears again, but here it is inside the geometry code and refers to what type of vector data the feature is. For example, my data below is a point, but I have also coded LineString and polygon features.<br><br>
+        The properties are where the visual appearance of features is stored. For polygons, this can include fill, area, stroke-width, and the opacity of colours assigned to borders and fill. In the example below, properties for point features include marker-color and marker-size, which can be assigned values. For example, in my file, within the properties section, marker-size is set to “medium” so that, on a map, the feature takes on a visual marker of a medium size. Other properties can be added to create attributes for the features. For example, I entered names of the restaurants I plotted. I also created a “type” column to record whether features were restaurants, major roads, or public parks, giving me the ability to record this qualitative information. Properties can also include functions, meaning JSON functionalities and methods can be applied.<br><br>
+        <div class = "row">
+            <div class = "col" >
+        The geometry allows the feature to be spatially referenced. Coordinates are used, as can be seen in the snippet of code I have included, with longitude and latitude enclosed in square brackets. For lines and polygons, additional coordinate pairs are listed.
+        <br><br> The GeoJSON is only one file, whereas a shapefile is composed of several smaller files containing information that requires software to be read together. While shapefiles use binary code, GeoJSON is text-based. Having only one file for GeoJSON might be considered an advantage, as it streamlines organization. More importantly, the plain-text format of GeoJSON makes it possible for humans to read, understand, edit directly in the code, making it preferable to a shapefile which requires GIS software to open and manipulate. Further, because it is based on JavaScript, GeoJSON is able to interface with almost all software and is particularly suitable for web map development. Shapefiles, in contrast, were proprietary software up until recently, making their use far less accessible. <br><br>
+        A key disadvantage of GeoJSON, however, is that these files take up far more storage space than shapefiles, since binary code is more compact and efficient. Further, due to its structure as a single source of data loaded into software simultaneously, its processing time is much slower, making it less convenient to use compared to a shapefile.
+    </p>
+    </div>
+    <div class = "col">
+    <h4>Figure 1</h4>
+    <h5>GeoJSON example code snippet </h5>
+        <img src="snippet.png" alt="GeoJSON code snippet"><br><br>
+    </div>
+</body>
+</html>

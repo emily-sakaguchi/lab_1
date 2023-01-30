@@ -15,6 +15,9 @@ h1 {
 body {
     background-color: black;
 }
+p {
+    color:whitesmoke
+}
 
 .container {
     position: relative;
@@ -64,6 +67,17 @@ h3 {
     font-size: 80px;
 }
 
+h4 {
+    color:whitesmoke;
+    font-family: sans-serif;
+}
+h5 {
+    color:whitesmoke;
+    font-family: sans-serif;
+    font-style: italic;
+    size:small
+}
+
 .btn {
     background-color: transparent; 
     color: whitesmoke; 
@@ -91,10 +105,15 @@ background-color: whitesmoke;
 .about-text {
     position: relative;
     text-align: left;
-    padding: 12px 20px;
+    padding: 20px 40px;
     color: white;
 }
 
 .right-centre {
     padding: 20px 500px;
+}
+
+.credit {
+    color: darkgrey;
+    font-size: small;
 }
