@@ -31,7 +31,8 @@
           </div>
         </div>
       </nav>
-    <div>
+     <!-- The section below is the title section of the webpage-->
+      <div>
       <img class="bg" src="https://images.unsplash.com/photo-1641255122178-a5aa1f828ca7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt = "Kensinton Market">
     <center>
         <div class="overlay">
@@ -42,21 +43,43 @@
             <h1>The Best of <br> Kensington Market</h1>
             </div>
           <div class="subtitle">
-            <h5>your one-stop guide for where to eat, shop, and play</h5>
-            <button type="button" class="btn">Explore</button>
+            <h2>your one-stop guide for where to eat, shop, and play</h2>
+            <div>
+              <br>
+              <button type="button" class = "btn" id = "my-btn">Explore</button>
             </div>
+             <!-- Below is the link to the JS for button functionaility (button scrolls to section 2)-->
+            <script src = "script.js"></script>
           </div>
-        </div>
-        <p>
-            You can find the geodata on the best plant-based restaurants and green spaces <a href="kensingtonmap.geojson">here</a>. <br>
-            Looking for more ideas on how to spend the perfect day in Kensington Market? Here are <a href=”https://www.blogto.com/sports_play/2014/10/how_to_spend_a_day_in_kensington_market_and_chinatown/”>BlogTO's</a> recommendations
-        </p>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>  
     </center>
   </div>
-  <div class = "section-2">
-    <h4>where to eat</h4>
-
+  <div>
+    <!--this is here to add some aesthetically pleasing space-->
+    <br>
+    <br>
+    <br>
+  </div>
+  <!-- The section below contains the external link and the local link-->
+  <div class = "section-2" id = "s2">
+    <div class = row> 
+      <!--I'm going to split up section 2 so that there is an image to the right of the text-->
+      <div class = "col" >
+        <h3>Where to Eat</h3>
+        <p>
+          If you're hungry, Kensington Market is the place to be! You can feast on churros, warm up over a bowl of pho, or even just shop for groceries.<br>
+          You can find the geodata on the best plant-based restaurants and green spaces <a target="_blank" href="kensingtonmap.geojson">here</a>. <br><br>
+          Looking for ideas on how to spend the perfect day in Kensington Market? Here are BlogTO's
+          <a target="_blank" href = "https://www.blogto.com/sports_play/2014/10/how_to_spend_a_day_in_kensington_market_and_chinatown/">recommendations</a>
+          .
+      </p>
+      </div>
+      <div class  = "col">
+        <img src="https://images.unsplash.com/photo-1614702897594-d60066634da0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt = "fruit market">
+      </div>
+    </div>
+    Photograph by Zoe Xu via Unsplash<br>
   </div>
  </body>
 </html> 
