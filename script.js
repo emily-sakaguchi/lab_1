@@ -1,6 +1,6 @@
 var button = document.getElementById("my-btn"); 
-var el = document.getElementById("s2");
+var scroll = document.getElementById("sc2");
 
 button.addEventListener("click", function() {
-    el.scrollIntoView(false);
+    sc2.scrollIntoView();
 });
